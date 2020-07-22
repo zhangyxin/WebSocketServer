@@ -332,7 +332,7 @@ namespace net
         char int64str[128];
         if (isNULL == false)
         {
-#ifndef _WIN32
+#ifndef WIN32
             sprintf(int64str, "%ld", value);
 #else
             sprintf(int64str, "%lld", value);

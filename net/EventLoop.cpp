@@ -105,7 +105,7 @@ void EventLoop::loop()
 
 	while (!quit_)
 	{       
-        timerQueue_->doTimer();
+        timerQueue_->doTimer();// deal all the timer event
 
         activeChannels_.clear();
 		pollReturnTime_ = poller_->poll(kPollTimeMs, &activeChannels_);

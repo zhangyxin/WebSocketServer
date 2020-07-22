@@ -1,6 +1,6 @@
 #include "PollPoller.h"
 
-#ifndef WIN32
+#ifndef _WIN32
 
 #include "../base/AsyncLog.h"
 #include "Channel.h"

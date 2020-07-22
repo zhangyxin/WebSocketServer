@@ -103,7 +103,8 @@ void Socket::setReusePort(bool on)
 void Socket::setKeepAlive(bool on)
 {
 #ifdef WIN32
-    //TODO: ²¹È«WindowsµÄÐ´·¨
+	int keep_alive = 1;
+	setsockopt(sockfd_, SOL_SOCKET, SO_KEEPALIVE, (char*)&keep_alive, sizeof(keep_alive));
 #else
 	int optval = on ? 1 : 0;
 	::setsockopt(sockfd_, SOL_SOCKET, SO_KEEPALIVE, &optval, static_cast<socklen_t>(sizeof optval));

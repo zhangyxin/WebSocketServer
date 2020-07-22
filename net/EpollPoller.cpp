@@ -1,6 +1,6 @@
 #include "EpollPoller.h"
 
-#ifndef WIN32
+#ifndef _WIN32
 #include <string.h>
 #include "../base/Platform.h"
 #include "../base/AsyncLog.h"

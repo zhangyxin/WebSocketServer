@@ -8,7 +8,7 @@
  ***************************************************************/
 #include "BusinessSession.h"
 
-std::string BusinessSession::m_strWelcomeMsg = "Welcome to WebSocket Server, contact: balloonwj@qq.com";
+std::string BusinessSession::m_strWelcomeMsg = "Welcome to WebSocket Server";
 
 BusinessSession::BusinessSession(std::shared_ptr<TcpConnection>& conn) : MyWebSocketSession(conn)
 {

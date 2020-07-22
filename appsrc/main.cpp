@@ -69,6 +69,7 @@ int main(int argc, char* argv[])
 
     LOGC("websocket server initialization complete.");
 
+	// main loop start 
     g_mainLoop.loop();
 
     return 0;

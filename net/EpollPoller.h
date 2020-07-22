@@ -1,6 +1,6 @@
 #pragma once
 
-#ifndef WIN32
+#ifndef _WIN32
 
 #include <vector>
 #include <map>

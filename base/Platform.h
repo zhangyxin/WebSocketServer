@@ -9,6 +9,11 @@
 #pragma warning(disable : 4996)
 #endif
 
+#ifdef _WIN32
+#define WIN32
+#endif // _WIN32
+
+
 #ifdef WIN32
 
 #pragma comment(lib, "Ws2_32.lib")
